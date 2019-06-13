@@ -4,7 +4,7 @@
   "description": "",
   "main": "4-callbacks.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node public/src-2/app.js"
   },
   "keywords": [],
   "author": "",
