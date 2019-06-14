@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) =>
         }
         else
         {
-            callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress outside. There is a ' + body.currently.precipProbability + '% chance of rain.')
+            callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress outside. There is a ' + body.currently.precipProbability + '% chance of rain. The visibility is ' + body.daily.data[0].visibility + ' with cloud cover being ' + body.daily.data[0].cloudCover + '. Pressure is also ' + body.daily.data[0].pressure)
         }
     })
 }
